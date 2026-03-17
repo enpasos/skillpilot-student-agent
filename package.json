@@ -1,0 +1,21 @@
+{
+  "name": "skillpilot-student-agent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Browser-driven student harness for SkillPilot black-box E2E contracts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --import tsx --test src/testing/*.spec.ts",
+    "scenario:resume": "tsx src/cli/run-scenario.ts resume-with-uuid",
+    "scenario:deeplink": "tsx src/cli/run-scenario.ts deep-link-roundtrip",
+    "scenario:exam": "tsx src/cli/run-scenario.ts exam-mode"
+  },
+  "dependencies": {
+    "playwright": "^1.56.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "tsx": "^4.20.6",
+    "typescript": "~5.9.3"
+  }
+}

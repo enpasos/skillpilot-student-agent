@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+secrets/
+config/env.local.json
+
+artifacts/*
+!artifacts/.gitkeep
+!artifacts/screenshots/
+!artifacts/screenshots/.gitkeep
+!artifacts/transcripts/
+!artifacts/transcripts/.gitkeep
+!artifacts/dom-snapshots/
+!artifacts/dom-snapshots/.gitkeep
